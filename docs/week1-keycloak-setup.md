@@ -44,3 +44,36 @@ Purpose:
 Used to deploy Keycloak container.
 
 ---
+## Step 2 – Keycloak Container Deployment
+
+Keycloak container pulled using Docker.
+
+Command used:
+
+docker pull quay.io/keycloak/keycloak
+
+Container started using:
+
+docker run -p 8080:8080 quay.io/keycloak/keycloak start-dev
+
+Keycloak server available at:
+
+http://localhost:8080
+
+---
+
+## Step 3 – Admin Console Login
+
+Temporary admin user created.
+
+Username:
+
+admin
+
+Password:
+
+admin
+
+Admin console accessed successfully.
+
+---
