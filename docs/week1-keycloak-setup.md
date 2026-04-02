@@ -116,3 +116,100 @@ Purpose:
 Implements Role Based Access Control.
 
 ---
+## Step 7 – Role Assignment
+
+Roles assigned:
+
+superadmin → Admin
+
+developer → Developer
+
+viewer → Viewer
+
+---
+
+## Input Commands Used
+
+Docker verification:
+
+docker --version
+
+Keycloak container execution:
+
+docker run -p 8080:8080 quay.io/keycloak/keycloak start-dev
+
+Admin console access:
+
+http://localhost:8080
+
+---
+
+## Output Achieved
+
+Keycloak Identity Server deployed successfully.
+
+Realm created successfully:
+
+Infotact
+
+Users authenticated successfully.
+
+Roles configured successfully.
+
+Admin console accessible through browser.
+
+---
+
+## Problems Faced
+
+Problem 1:
+
+Docker Desktop not starting initially.
+
+Solution:
+
+Restarted Docker service and enabled virtualization.
+
+Problem 2:
+
+Port 8080 conflict error occurred once.
+
+Solution:
+
+Stopped conflicting service and restarted container.
+
+Problem 3:
+
+Keycloak container stopped unexpectedly during first execution.
+
+Solution:
+
+Re-executed docker run command correctly.
+
+---
+
+## Screenshot Evidence
+
+Admin Console Dashboard:
+
+![Dashboard](../screenshots/keycloak-dashboard.jpeg)
+
+Realm Creation:
+
+![Realm](../screenshots/realm-created.jpeg)
+
+Users Creation:
+
+![Users](../screenshots/users-created.jpeg)
+
+Roles Creation:
+
+![Roles](../screenshots/roles-created.jpeg)
+
+---
+
+## Result
+
+Centralized Identity Provider successfully deployed using Keycloak.
+
+Identity infrastructure ready for OpenID Connect integration.
