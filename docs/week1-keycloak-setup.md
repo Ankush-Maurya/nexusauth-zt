@@ -77,3 +77,42 @@ admin
 Admin console accessed successfully.
 
 ---
+## Step 4 – Realm Creation
+
+New realm created:
+
+Infotact
+
+Purpose:
+
+Isolates identity environment for Zero Trust implementation.
+
+---
+
+## Step 5 – Users Creation
+
+Users created:
+
+superadmin  
+developer  
+viewer  
+
+Purpose:
+
+Simulate multiple access-level identities.
+
+---
+
+## Step 6 – Roles Creation
+
+Roles created:
+
+Admin  
+Developer  
+Viewer  
+
+Purpose:
+
+Implements Role Based Access Control.
+
+---
