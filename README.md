@@ -1,151 +1,34 @@
-🔐 NexusAuth-ZT
+# 🔐 NexusAuth-ZT
+### Centralized Zero-Trust Identity Provider using Keycloak
 
-Centralized Zero-Trust Identity Provider using Keycloak (IAM Project)
+NexusAuth-ZT is a centralized Identity and Access Management (IAM) solution built using **Keycloak**, designed to simulate a production-style **Zero-Trust authentication architecture**.
 
-NexusAuth-ZT is a centralized Identity and Access Management (IAM) solution built using Keycloak, implementing Zero-Trust security principles, OIDC authentication, RBAC authorization, Multi-Factor Authentication (MFA), and security hardening controls.
+This project implements secure authentication using **OpenID Connect (OIDC)**, **JWT token validation**, **Role-Based Access Control (RBAC)**, **Multi-Factor Authentication (OTP)**, and advanced **security hardening techniques** such as event logging, brute-force protection, token lifespan restriction, and browser security headers.
 
-This project simulates a production-style enterprise identity provider capable of securing multiple applications through a unified authentication platform.
-
----
-
-📌 Project Objective
-
-Organizations often suffer from password fatigue and inconsistent authentication policies across multiple internal applications.
-
-NexusAuth-ZT solves this by:
-
-- Centralizing identity management
-- Enforcing secure authentication policies
-- Implementing MFA protection
-- Providing role-based authorization
-- Applying auditing and monitoring controls
-- Following Zero-Trust security architecture principles
+The goal of this project is to demonstrate how organizations can replace fragmented authentication systems with a centralized identity provider that enforces strong security policies across multiple applications.
 
 ---
 
-🏗️ Architecture Overview
+## 🚀 Key Features
 
-Key Components:
-
-- Keycloak Identity Provider
-- Dockerized Deployment
-- PostgreSQL-ready Architecture (Production Pattern)
-- OIDC Authentication Flow
-- JWT Token Validation
-- RBAC Authorization Model
-- Conditional MFA (OTP)
-- Event Logging & Security Hardening
-
----
-
-⚙️ Technologies Used
-
-- Keycloak
-- Docker
-- OpenID Connect (OIDC)
-- JWT Tokens
-- Role Based Access Control (RBAC)
-- Multi-Factor Authentication (OTP)
-- Security Headers
-- Event Logging & Monitoring
+✔ Centralized Authentication using Keycloak  
+✔ OpenID Connect (OIDC) Login Flow  
+✔ JWT Access Token Validation  
+✔ Role-Based Access Control (RBAC)  
+✔ Multi-Factor Authentication (OTP)  
+✔ Permanent Admin Security Configuration  
+✔ User & Admin Event Logging  
+✔ Token Lifespan Hardening  
+✔ Brute Force Protection  
+✔ Security Headers Configuration  
 
 ---
 
-📅 Project Implementation Timeline
+## 🎯 Project Purpose
 
-Week 1 — Identity Infrastructure Setup
+This project simulates an enterprise-level Identity Provider that:
 
-✔ Dockerized Keycloak deployment
-✔ Infotact realm creation
-✔ Roles configuration (Admin / Developer / Viewer)
-✔ Users and groups setup
-✔ Permanent admin configuration
-
----
-
-Week 2 — OIDC Integration
-
-✔ OIDC client registration
-✔ Flask protected application integration
-✔ Redirect-based authentication flow
-✔ JWT token generation and validation
-
----
-
-Week 3 — RBAC + MFA Implementation
-
-✔ Role mapping configuration
-✔ Access token claim verification
-✔ OTP-based Multi-Factor Authentication
-✔ Protected route authorization testing
-
----
-
-Week 4 — Security Hardening & Auditing
-
-✔ Permanent admin account setup
-✔ User event logging enabled
-✔ Admin event logging enabled
-✔ Token lifespan reduction
-✔ Security headers configuration
-✔ Brute-force protection enabled
-
----
-
-🔐 Security Features Implemented
-
-Centralized authentication
-
-OIDC token-based access control
-
-Multi-Factor Authentication (OTP)
-
-Role-based authorization (RBAC)
-
-Short-lived access tokens
-
-Brute-force attack protection
-
-User & admin activity auditing
-
-Browser security header protection
-
-Zero-Trust identity architecture simulation
-
----
-
-📊 Screenshots Evidence
-
-Project screenshots are available inside:
-
-/screenshots
-
-They include:
-
-- OIDC client configuration
-- JWT token validation
-- MFA setup
-- Role mapping
-- Event logging configuration
-- Token hardening settings
-- Brute force protection setup
-
----
-
-🚀 Future Enhancements
-
-Google Workspace Federation (Social Login)
-
-WebAuthn Passwordless Authentication
-
-SIEM Integration for log monitoring
-
-Reverse Proxy Deployment (NGINX)
-
-Production TLS Hardening
-
----
-
-Cybersecurity Project
-Identity & Access Management (IAM)
-Zero-Trust Authentication Architecture
+- reduces credential fatigue
+- enforces consistent authentication policies
+- enables secure Single Sign-On (SSO)
+- supports Zero-Trust security architecture principles
