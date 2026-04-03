@@ -2,7 +2,7 @@
 
 ## Objective
 
-Enhance the security posture of the centralized Identity Provider by enabling auditing, enforcing password policies, reducing token lifespan, configuring brute-force protection, and replacing temporary admin access with a permanent administrative account.
+Enhance the security posture of the centralized Identity Provider by enabling auditing, enforcing token security controls, configuring security headers, enabling brute-force protection, and replacing temporary admin access with a permanent administrative account.
 
 ---
 
@@ -14,9 +14,9 @@ Enabled Admin Event Logging for configuration-level auditing.
 
 Configured Permanent Admin Account (superadmin) and removed temporary admin dependency.
 
-Applied Password Security Policy enforcement.
-
 Reduced Token Lifespan to improve session security.
+
+Configured Security Headers for browser-side protection.
 
 Enabled Brute Force Protection to prevent credential attacks.
 
@@ -37,11 +37,11 @@ Configured Users:
 - ankush_dev
 - ankush_view
 
-Security Policies Applied:
-
-Password Policy
+Security Controls Applied:
 
 Token Lifespan Restrictions
+
+Security Headers Configuration
 
 Brute Force Detection
 
@@ -57,9 +57,9 @@ User Event Logging enabled
 
 Admin Event Logging enabled
 
-Password Policy enforced
-
 Access Token lifespan reduced
+
+Security Headers configured successfully
 
 Brute Force Protection enabled
 
@@ -81,7 +81,7 @@ Realm confusion between master and Infotact realm.
 
 Created permanent admin credentials using superadmin account.
 
-Reset credentials through Keycloak user credential panel.
+Reset credentials through Keycloak credential settings.
 
 Logged into correct realm admin console.
 
@@ -95,10 +95,6 @@ Permanent Admin Login:
 
 ![Permanent Admin](../screenshots/permanent-admin-login.png)
 
-Password Policy Configuration:
-
-![Password Policy](../screenshots/password-policy.png)
-
 Token Settings Configuration:
 
 ![Token Settings](../screenshots/token-settings.png)
@@ -110,6 +106,10 @@ User Event Logging Enabled:
 Admin Event Logging Enabled:
 
 ![Admin Events](../screenshots/admin-events.png)
+
+Security Headers Configuration:
+
+![Security Headers](../screenshots/security-headers.png)
 
 Brute Force Protection Enabled:
 
@@ -123,9 +123,9 @@ Security hardening successfully implemented for the centralized Keycloak Identit
 
 Authentication auditing enabled
 
-Password enforcement policies active
-
 Token expiration hardened
+
+Security headers configured
 
 Brute force attack protection enabled
 
